@@ -271,3 +271,4 @@ __pycache__/
 ### VisualStudioCode ###
 .vscode/*
 .history
+Properties/launchSettings.json

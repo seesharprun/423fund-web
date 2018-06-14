@@ -2,8 +2,17 @@
 @{
     ViewData["Title"] = "Summer Breeze on Main Street";
 }
-
-<tito-widget event="423fund/summer-breeze-2018">Make a donation today!</tito-widget>
+<main class="container pt-2">
+    <article class="row">
+        <aside class="col-md-8 col-lg-6">
+            <img src="~/img/flyer-left.png" class="img-fluid" />
+        </aside>
+        <aside class="col-md-4 col-lg-6">
+            <tito-widget event="423fund/summer-breeze-2018">Make a donation today!</tito-widget>
+            <img src="~/img/flyer-middle.png" class="img-fluid" />
+        </aside>
+    </article>
+</main>
 @section styles {
     <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
 }

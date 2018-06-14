@@ -1,9 +1,0 @@
-﻿[
-  {
-    "outputFileName": "wwwroot/css/site.min.css",
-    "inputFiles": [
-      "wwwroot/css/bootstrap-custom.css",
-      "wwwroot/css/theme.css"
-    ]
-  }
-]
