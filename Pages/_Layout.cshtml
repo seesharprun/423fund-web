@@ -1,133 +1,134 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>
-    The 423 Fund 
-    @if(ViewData.ContainsKey("Title")) { @ViewData["Title"] }
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="~/css/bootstrap-custom.css" />
-        <link rel="stylesheet" href="~/css/theme.css" />
-   <link rel="apple-touch-icon" sizes="180x180" href="/social/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/social/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/social/favicon-16x16.png">
-<link rel="manifest" href="/social/manifest.json">
-<link rel="mask-icon" href="/social/safari-pinned-tab.svg" color="#c9a148">
-<link rel="shortcut icon" href="/social/favicon.ico">
-<meta name="apple-mobile-web-app-title" content="The 423 Fund">
-<meta name="application-name" content="The 423 Fund">
-<meta name="msapplication-config" content="/social/browserconfig.xml">
-<meta name="theme-color" content="#c9a148">
-<meta property="og:image" content="http://423fund.org/social/facebook.jpg">
-<meta property="og:image:width" content="1061">
-<meta property="og:image:height" content="1592">
-<meta property="og:title" content="The 423 Fund">
-<meta property="og:description" content="The 423 Fund is a 501(c)(3) nonprofit organization based in Chesterfield County, Virginia, organized exclusively for charitable and educational purposes. This includes support for and partnering with organizations, schools and communities in the Greater Richmond Region to address key issues associated with student achievement.">
-<meta property="og:url" content="http://423fund.org">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        The 423 Fund
+        @if (ViewData.ContainsKey("Title"))
+        {@ViewData["Title"]}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap-custom.css" />
+    <link rel="stylesheet" href="~/css/theme.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/social/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/social/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/social/favicon-16x16.png">
+    <link rel="manifest" href="/social/manifest.json">
+    <link rel="mask-icon" href="/social/safari-pinned-tab.svg" color="#c9a148">
+    <link rel="shortcut icon" href="/social/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="The 423 Fund">
+    <meta name="application-name" content="The 423 Fund">
+    <meta name="msapplication-config" content="/social/browserconfig.xml">
+    <meta name="theme-color" content="#c9a148">
+    <meta property="og:image" content="http://423fund.org/social/facebook.jpg">
+    <meta property="og:image:width" content="1061">
+    <meta property="og:image:height" content="1592">
+    <meta property="og:title" content="The 423 Fund">
+    <meta property="og:description" content="The 423 Fund is a 501(c)(3) nonprofit organization based in Chesterfield County, Virginia, organized exclusively for charitable and educational purposes. This includes support for and partnering with organizations, schools and communities in the Greater Richmond Region to address key issues associated with student achievement.">
+    <meta property="og:url" content="http://423fund.org">
     @RenderSection("Styles", required: false)
 
 </head>
 <body>
-      <div class="wrapper">
-    <header class="header">
-      <div class="header-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 col-md-8 col-sm-8">
-              <div class="header-location hidden-sm-down">
-                <i class="fa fa-home"></i>
-                <a href="https://goo.gl/maps/xcdDVB5wqSv" target="_blank">
-                  Chesterfield County, Virginia
-                </a>
-              </div>
-              <div class="header-email">
-                <i class="fa fa-envelope-o"></i>
-                <a href="mailto:info@423fund.org" target="_blank">info@423fund.org</a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-4">
-              <div class="header-social pull-right">
-                <a href="http://facebook.com/423-Fund-658797580976269/" target="_blank">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="http://twitter.com/the423fund" target="_blank">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-bottom">
-          <nav class="navbar navbar-universal navbar-custom">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="logo">
-                    <a asp-page="/index" class="navbar-brand page-scroll">
-                        <img src="/img/navbar_logo.png" alt="logo" />
-                        <span>The 423 Fund</span>
-                    </a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-8 col-sm-8">
+                            <div class="header-location hidden-sm-down">
+                                <i class="fa fa-home"></i>
+                                <a href="https://goo.gl/maps/xcdDVB5wqSv" target="_blank">
+                                    Chesterfield County, Virginia
+                                </a>
+                            </div>
+                            <div class="header-email">
+                                <i class="fa fa-envelope-o"></i>
+                                <a href="mailto:info@423fund.org" target="_blank">info@423fund.org</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <div class="header-social pull-right">
+                                <a href="http://facebook.com/423-Fund-658797580976269/" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="http://twitter.com/the423fund" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-9">
-                <div class="navbar-header">
-                    <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle">
-            <span class="sr-only">
-                Toggle navigation
-            </span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-                </div>
-                <div class="collapse navbar-collapse navbar-main-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li is-active-page asp-page="/index">
-                            <a asp-page="/index">Home</a>
-                        </li>
-                        <li is-active-page asp-page="/partners/index">
-                            <a asp-page="/partners/index">Partnerships</a>
-                        </li>
-                        <li is-active-page asp-page="/scholarship/index">
-                            <a asp-page="/scholarship/index">Scholarship</a>
-                        </li>
-                    </ul>
+            <div class="header-bottom">
+                <nav class="navbar navbar-universal navbar-custom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="logo">
+                                    <a asp-page="/index" class="navbar-brand page-scroll">
+                                        <img src="/img/navbar_logo.png" alt="logo" />
+                                        <span>The 423 Fund</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="navbar-header">
+                                    <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle">
+                                        <span class="sr-only">
+                                            Toggle navigation
+                                        </span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse navbar-main-collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li is-active-page asp-page="/index">
+                                            <a asp-page="/index">Home</a>
+                                        </li>
+                                        <li is-active-page asp-page="/partners/index">
+                                            <a asp-page="/partners/index">Partnerships</a>
+                                        </li>
+                                        <li is-active-page asp-page="/scholarship/index">
+                                            <a asp-page="/scholarship/index">Scholarship</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        @RenderBody()
+        <footer class="footer">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-bottom_copy">Copyright © 2017 423 Fund, Inc. | Design by <a href="https://themeforest.net/user/Dankov" target="_blank">Dankov</a></div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-bottom_links">
+                                <a href="/index">Home</a>
+                                <a href="/partners/index">Partnerships</a>
+                                <a href="/scholarship/index">Scholarship Application</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
-</nav>
-      </div>
-    </header>
-    @RenderBody()
-    <footer class="footer">
-        <div class="footer-bottom">
-    <div class="container">
-        <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="footer-bottom_copy">Copyright © 2017 423 Fund, Inc. | Design by <a href="https://themeforest.net/user/Dankov" target="_blank">Dankov</a></div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="footer-bottom_links">
-                <a href="/index">Home</a>
-                <a href="/partners/index">Partnerships</a>
-                <a href="/scholarship/index">Scholarship Application</a>
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
-    </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

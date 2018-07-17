@@ -9,121 +9,126 @@
             <h2 class="h2">
                 @ViewData["Title"]
             </h2>
-<p class="lead">
-    Are you interested in our scholarship? Fill out the form below with your responses to be considered for the scholarship award.
-</p>
-<hr />
-<div class="card">
-    <div class="card-block">
-        <form action="https://formspree.io/xkogwebx" method="POST"> 
-            <input type="hidden" name="_subject" value="New Scholarship Application" />
-            <input type="hidden" name="_cc" value="damondmanning@gmail.com" />
-            <input type="hidden" name="_next" value="//423fund.org/scholarship/thanks/" />
-            <input type="text" name="_gotcha" style="display: none"> 
-            <fieldset>
-                <legend>
-                    Your Information
-                </legend>
-                <div class="form-group">
-                    <label for="email">E-mail Address</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email-help" required="required"></input>
-                    <small id="email-help" class="form-text text-muted">We'll need your e-mail to contact you if you are awarded the scholarship.</small>
-                </div>
-                <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" class="form-control" id="first-name" name="first-name" required="required"></input>
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" class="form-control" id="last-name" name="last-name" required="required"></input>
-                </div>
-            </fieldset>
+            <p class="lead">
+                Are you interested in our scholarship? Fill out the form below with your responses to be considered for the scholarship award.
+            </p>
             <hr />
-            <fieldset>
-                <legend>
-                    Parent/Guardian Information
-                </legend>
-                <div class="form-group">
-                    <label for="parent-name">Parent/Guardian Name[s]</label>
-                    <input type="text" class="form-control" id="parent-name" name="parent-name" required="required"></input>
+            <p>
+                <small>
+                    Scholarship application will remain open until July 27, 2018.
+                </small>
+            </p>
+            <div class="card">
+                <div class="card-block">
+                    <form action="https://formspree.io/xkogwebx" method="POST">
+                        <input type="hidden" name="_subject" value="New Scholarship Application" />
+                        <input type="hidden" name="_cc" value="damondmanning@gmail.com" />
+                        <input type="hidden" name="_next" value="//423fund.org/scholarship/thanks/" />
+                        <input type="text" name="_gotcha" style="display: none">
+                        <fieldset>
+                            <legend>
+                                Your Information
+                            </legend>
+                            <div class="form-group">
+                                <label for="email">E-mail Address</label>
+                                <input type="email" class="form-control" id="email" name="email" aria-describedby="email-help" required="required"></input>
+                                <small id="email-help" class="form-text text-muted">We'll need your e-mail to contact you if you are awarded the scholarship.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" class="form-control" id="first-name" name="first-name" required="required"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" class="form-control" id="last-name" name="last-name" required="required"></input>
+                            </div>
+                        </fieldset>
+                        <hr />
+                        <fieldset>
+                            <legend>
+                                Parent/Guardian Information
+                            </legend>
+                            <div class="form-group">
+                                <label for="parent-name">Parent/Guardian Name[s]</label>
+                                <input type="text" class="form-control" id="parent-name" name="parent-name" required="required"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="parent-phone" name="parent-phone" required="required"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-email">E-mail Address</label>
+                                <input type="email" class="form-control" id="parent-email" name="parent-email" aria-describedby="parent-email-help"></input>
+                                <small id="parent-email-help" class="form-text text-muted">This field is optional. It will be used to contact your parents if you are awarded the scholarship.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-address">Mailing Address</label>
+                                <textarea rows="3" type="text" class="form-control" id="parent-address" name="parent-address" required="required"></textarea>
+                            </div>
+                        </fieldset>
+                        <hr />
+                        <fieldset>
+                            <legend>
+                                Education Information
+                            </legend>
+                            <div class="form-group">
+                                <label for="high-school">Current High School</label>
+                                <input type="text" class="form-control" id="high-school" name="high-school" required="required"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="grade-point-avg">Current GPA</label>
+                                <input type="number" class="form-control" id="grade-point-avg" name="grade-point-avg" value="0.00" step="0.01" min="0.00" max="9.99" required="required"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="graduation-year">Graduation Year</label>
+                                <input type="number" class="form-control" id="graduation-year" name="graduation-year" value="2017" min="2017" max="2020" required="required"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="sat-score">SAT Score (Total)</label>
+                                <input type="number" class="form-control" id="sat-score" name="sat-score" aria-describedby="sat-score-help" step="1" min="200" max="1600"></input>
+                                <small id="sat-score-help" class="form-text text-muted">This field is optional.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="activities-clubs">
+                                    Please list any extracurricular activities or clubs that you have participated in during your high school tenure.
+                                </label>
+                                <textarea rows="5" class="form-control" id="activities-clubs" name="activities-clubs" required="required"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="honors-awards">
+                                    Please list any honors or awards you have received during your high school tenure.
+                                </label>
+                                <textarea rows="5" class="form-control" id="honors-awards" name="honors-awards" required="required"></textarea>
+                            </div>
+                        </fieldset>
+                        <hr />
+                        <fieldset>
+                            <legend>
+                                Affirmation
+                            </legend>
+                            <div class="form-group">
+                                <p>
+                                    I, (student applicant) affirm that the above information is true and correct, and if requested I can provide documentation that supports the information provided.
+                                </p>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label for="signature">Student Applicant Typed Signature</label>
+                                    <input type="text" class="form-control" id="signature" name="signature" required="required"></input>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="signature-date">Date</label>
+                                    <input type="text" class="form-control" id="signature-date" name="signature-date" required="required"></input>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <hr />
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="parent-phone">Phone Number</label>
-                    <input type="tel" class="form-control" id="parent-phone" name="parent-phone" required="required"></input>
-                </div>
-                <div class="form-group">
-                    <label for="parent-email">E-mail Address</label>
-                    <input type="email" class="form-control" id="parent-email" name="parent-email" aria-describedby="parent-email-help"></input>
-                    <small id="parent-email-help" class="form-text text-muted">This field is optional. It will be used to contact your parents if you are awarded the scholarship.</small>
-                </div>
-                <div class="form-group">
-                    <label for="parent-address">Mailing Address</label>
-                    <textarea rows="3" type="text" class="form-control" id="parent-address" name="parent-address" required="required"></textarea>
-                </div>
-            </fieldset>
-            <hr />
-            <fieldset>
-                <legend>
-                    Education Information
-                </legend>
-                <div class="form-group">
-                    <label for="high-school">Current High School</label>
-                    <input type="text" class="form-control" id="high-school" name="high-school" required="required"></input>
-                </div>
-                <div class="form-group">
-                    <label for="grade-point-avg">Current GPA</label>
-                    <input type="number" class="form-control" id="grade-point-avg" name="grade-point-avg" value="0.00" step="0.01" min="0.00" max="9.99" required="required"></input>
-                </div>
-                <div class="form-group">
-                    <label for="graduation-year">Graduation Year</label>
-                    <input type="number" class="form-control" id="graduation-year" name="graduation-year" value="2017" min="2017" max="2020" required="required"></input>
-                </div>
-                <div class="form-group">
-                    <label for="sat-score">SAT Score (Total)</label>
-                    <input type="number" class="form-control" id="sat-score" name="sat-score" aria-describedby="sat-score-help" step="1" min="200" max="1600"></input>                    
-                    <small id="sat-score-help" class="form-text text-muted">This field is optional.</small>
-                </div>
-                <div class="form-group">
-                    <label for="activities-clubs">
-                        Please list any extracurricular activities or clubs that you have participated in during your high school tenure.
-                    </label>
-                    <textarea rows="5" class="form-control" id="activities-clubs" name="activities-clubs" required="required"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="honors-awards">
-                        Please list any honors or awards you have received during your high school tenure.
-                    </label>
-                    <textarea rows="5" class="form-control" id="honors-awards" name="honors-awards" required="required"></textarea>
-                </div>
-            </fieldset>
-            <hr />
-            <fieldset>
-                <legend>
-                    Affirmation
-                </legend>
-                <div class="form-group">
-                    <p>
-                        I, (student applicant) affirm that the above information is true and correct, and if requested I can provide documentation that supports the information provided.
-                    </p>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-6">
-                        <label for="signature">Student Applicant Typed Signature</label>
-                        <input type="text" class="form-control" id="signature" name="signature" required="required"></input>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="signature-date">Date</label>
-                        <input type="text" class="form-control" id="signature-date" name="signature-date" required="required"></input>
-                    </div>
-                </div>
-            </fieldset>
-            <hr />
-            <div class="form-group">
-                <button type="submit" class="btn btn-secondary">Submit</button>
             </div>
-        </form>
-    </div>
-</div>            
         </div>
     </div>
 </section>
