@@ -1,0 +1,50 @@
+﻿@page "{amount:double?}"
+@model _423fund.Pages.Donate.IndexModel
+@{
+    ViewData["Title"] = "Donate";
+}
+<section class="best-room">
+    <div class="container">
+        <div class="title-main">
+            <h2 class="h2">
+                @ViewData["Title"]
+            </h2>
+        </div>
+        <div>
+            <p class="lead">
+
+            </p>
+            <p class="py-2">
+                <a class="dbox-donation-button" href="https://donorbox.org/423-fund?amount=@Model.Amount">
+                    Donate
+                </a>
+            </p>
+            <p>
+                <small>
+                    We are a 501(c)(3) charitable organization, EIN 31-1743699. All the contributions are tax deductible. No goods or services will be provided in exchange for the contribution.
+                </small>
+            </p>
+        </div>
+    </div>
+</section>
+@section scripts {
+    <script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
+}
+@section styles {
+    <style type="text/css">
+        .dbox-donation-button {
+            background: #A07F0A url(https://d1iczxrky3cnb2.cloudfront.net/white_logo.png) no-repeat 37px center;
+            color: #fff;
+            text-decoration: none;
+            font-family: Verdana,sans-serif;
+            display: inline-block;
+            font-size: 16px;
+            padding: 15px 38px 15px 75px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            box-shadow: 0 1px 0 0 #705807;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+}
