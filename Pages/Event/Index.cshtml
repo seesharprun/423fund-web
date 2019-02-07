@@ -4,12 +4,30 @@
 }
 <main class="container pt-2">
     <article class="row">
-        <aside class="col-md-8 col-lg-6">
-            <img src="~/img/flyer-left.png" class="img-fluid" />
+        <aside class="col-lg-8">
+            <img src="~/img/flyer-2019.png" class="img-fluid" />
         </aside>
-        <aside class="col-md-4 col-lg-6">
-            <tito-widget class="invisible" event="423fund/summer-breeze-2018">Make a donation today!</tito-widget>
-            <img src="~/img/flyer-middle.png" class="img-fluid" />
+        <aside class="col-lg-4">
+            <div id="eventbrite-widget-container-56118688508"></div>
+
+            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+            <script type="text/javascript">
+                var exampleCallback = function () {
+                    console.log('Order complete!');
+                };
+
+                window.EBWidgets.createWidget({
+                    // Required
+                    widgetType: 'checkout',
+                    eventId: '56118688508',
+                    iframeContainerId: 'eventbrite-widget-container-56118688508',
+
+                    // Optional
+                    iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                });
+            </script>
         </aside>
     </article>
     <div class="py-3 px-3">
